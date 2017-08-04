@@ -58,7 +58,7 @@
                         </goals>
                         <configuration>
                             <scanIntervalSeconds>0</scanIntervalSeconds>
-                            <daemon>true</daemon>
+                            <!--<daemon>true</daemon>-->
                         </configuration>
                     </execution>
                     <execution>
@@ -174,7 +174,8 @@
         </dependency>
     </dependencies>
     <properties>
-        <jetty-version>9.0.7.v20131107</jetty-version>
+        <!--<jetty-version>9.0.7.v20131107</jetty-version>-->
+        <jetty-version>9.4.6.v20170531</jetty-version>
         <jersey2-version>2.25.1</jersey2-version>
         <guice-servlet-version>4.1.0</guice-servlet-version>
     </properties>
