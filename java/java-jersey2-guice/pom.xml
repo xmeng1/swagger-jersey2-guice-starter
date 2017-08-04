@@ -149,7 +149,7 @@
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
+            <artifactId>javax.servlet-api</artifactId>
         </dependency>
         <dependency>
             <groupId>org.glassfish.jersey.containers</groupId>
@@ -169,7 +169,7 @@
     </dependencies>
     <properties>
         <jetty-version>9.0.7.v20131107</jetty-version>
-        <jersey2-version>2.4.1</jersey2-version>
-        <guice-servlet-version>3.0</guice-servlet-version>
+        <jersey2-version>2.25.1</jersey2-version>
+        <guice-servlet-version>4.1.0</guice-servlet-version>
     </properties>
 </project>
