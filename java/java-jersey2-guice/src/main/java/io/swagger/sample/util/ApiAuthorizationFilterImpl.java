@@ -73,7 +73,8 @@ public class ApiAuthorizationFilterImpl implements SwaggerSpecFilter {
   }
 
   public boolean checkKey(Map<String, List<String>> params, Map<String, List<String>> headers) {
-    String keyValue = null;
+    return true;
+    /*    String keyValue = null;
     if(params.containsKey("api_key"))
       keyValue = params.get("api_key").get(0);
     else {
@@ -83,6 +84,6 @@ public class ApiAuthorizationFilterImpl implements SwaggerSpecFilter {
     if("special-key".equals(keyValue))
       return true;
     else
-      return false;
+      return false;*/
   }
 }

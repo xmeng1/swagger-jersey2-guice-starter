@@ -6,6 +6,7 @@ import com.google.inject.Singleton;
 import com.google.inject.servlet.GuiceServletContextListener;
 import com.google.inject.servlet.ServletModule;
 import io.swagger.jaxrs.config.BeanConfig;
+import io.swagger.sample.util.ApiAuthorizationFilterImpl;
 import io.swagger.sample.util.ApiOriginFilter;
 import org.glassfish.jersey.servlet.ServletContainer;
 
@@ -36,7 +37,7 @@ public class SwaggerExampleGuiceContextListener extends GuiceServletContextListe
                 beanConfig.setTitle("Swagger Petstore");
                 beanConfig.setHost("localhost:8002");
                 beanConfig.setBasePath("/api");
-                beanConfig.setFilterClass("io.swagger.sample.util.ApiAuthorizationFilterImpl");
+                beanConfig.setFilterClass(ApiAuthorizationFilterImpl.class.getName());
                 beanConfig.setResourcePackage("io.swagger.sample.resource");
                 beanConfig.setContact("apiteam@swagger.io");
                 beanConfig.setLicense("Apache 2.0");

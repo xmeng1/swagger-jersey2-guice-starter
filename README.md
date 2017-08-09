@@ -1,18 +1,19 @@
-# swagger-samples
+## Introduction
 
-The goal of Swagger™ is to define a standard, language-agnostic interface to REST APIs which allows both humans and 
-computers to discover and understand the capabilities of the service without access to source code, documentation, or 
-through network traffic inspection. When properly defined via Swagger, a consumer can understand and interact with the 
-remote service with a minimal amount of implementation logic. Similar to what interfaces have done for lower-level 
-programming, Swagger removes the guesswork in calling the service.
+This project is migrated from the official swagger sample repository. There are several issues for the sample of Jersey2-Guice projects. So this project just fix these issues and upgrade the version of dependencies.
 
-Check out [Swagger-Spec](https://github.com/OAI/OpenAPI-Specification) for additional information about the Swagger 
-project, including additional libraries with support for SpringMVC, other languages and more.
- 
-## What's here?
- 
-This repository serves for samples for various projects. Right now it contains the samples for swagger-core under
-the java library. Each sample contains a README file with details how to run it and what to check.
+## How tu use
+
+The use is very simple, because I have integrated the several configuration of Jetbrain. After clone or download the package, just use Jetbrain Intellij open the folder and there will two Run Configuration.
+
+1. clean and jetty:run : will run clean/compile/war/jetty:run
+2. jetty:run: just jetty:run
+
+So first time, you can use the first configuration to run. And then visit http://localhost:8002, you will see the Swagger-UI page.
+
+You can try the Get Pet API, input id: 1, and you will get some output with Cat object.
+
+You can also debug with the Run Configuration.
 
 ---
 <img src="http://swagger.io/wp-content/uploads/2016/02/logo.jpg"/>
